@@ -1,7 +1,7 @@
 const express = require('express')
 
-const routes = express.routes()
-const ProductController = require('')
+const routes = express.Router()
+const ProductController = require('./controllers/ProductCOntroller')
 
 routes.get('/products', ProductController.index)
 routes.post('/products', ProductController.store)
